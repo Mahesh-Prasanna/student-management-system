@@ -1,0 +1,19 @@
+table{
+    td:first-child,
+    th:first-child,
+    td:last-child{
+        text-align: center;
+    }
+    td:last-child{
+        font-size: 1.3rem;
+    }
+    td, th{
+        vertical-align: center;
+    }
+    tbody tr{
+        cursor: pointer;
+    }
+}
+.col-id{
+    width: 70px;
+}
