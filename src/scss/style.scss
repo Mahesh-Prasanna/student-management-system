@@ -5,7 +5,10 @@ table{
         text-align: center;
     }
     td:last-child{
-        font-size: 1.3rem;
+        font-size: 24px;
+        i:hover{
+            color: red;
+        }
     }
     td, th{
         vertical-align: center;

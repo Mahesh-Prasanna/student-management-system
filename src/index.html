@@ -16,55 +16,60 @@
 </head>
 <body class="container">
    <div >
-    <h3 class="mt-2 text-center">Student Management System</h3>
-    <form action="#">
-        <button id="btn-new-student" type="button" class=" mt-2 mb-3 btn btn-primary">+ New Student</button>
-        <div class="mb-3">
-            <label class="form-label">Customer ID</label>
-            <input disabled id="txt-id" type="text" class="form-control" placeholder="Eg. C001" >
+        <h3 class="mt-2 text-center">Student Management System</h3>
+        <form action="#">
+            <button id="btn-new" type="button" class=" mt-2 mb-3 btn btn-primary">+ New Student</button>
+            <div class="form-floating mb-3">
+                <input disabled id="txt-id" type="text" class="form-control" placeholder="Eg. C001" >
+                <label class="form-label">Customer ID</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input disabled id="txt-name" type="text" class="form-control" placeholder="Eg. Mahesh Prasanna" >
+                <label class="form-label">Customer Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input disabled id="txt-address" type="text" class="form-control" placeholder="Galle Road, Katubedda" >
+                <label class="form-label">Customer Address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input disabled id="txt-contact" type="text" class="form-control" placeholder="Eg. 077-1234567" >
+                <label class="form-label">Customer Contact</label>
+            </div>
+            <button id="btn-save" type="button" class="mt-2 me-2 btn btn-success">Save</button>
+            <button id="btn-clear" type="button" class="mt-2 btn btn-danger">Remove</button>
+        </form>
+        <div class="col-xl-8">
+            <table id="tbl-student" class="table table-hover">
+                <colgroup>
+                    <col class="col-Id">
+                    <col class="col-Name">
+                    <col class="col-Address">
+                    <col class="col-Remove">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NAME</th>
+                        <th>CONTACT</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S001</td>
+                        <td>Tharindu</td>
+                        <td>077-1234567</td>
+                        <td><i class="bi bi-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td>S001</td>
+                        <td>Tharindu</td>
+                        <td>077-1234567</td>
+                        <td><i class="bi bi-trash"></i></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Customer Name</label>
-            <input disabled id="txt-name" type="text" class="form-control" placeholder="Eg. Mahesh Prasanna" >
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Customer Address</label>
-            <input disabled id="txt-address" type="text" class="form-control" placeholder="Galle Road, Katubedda" >
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Customer Contact</label>
-            <input disabled id="txt-contact" type="text" class="form-control" placeholder="Eg. 077-1234567" >
-        </div>
-        <button id="btn-save" type="button" class="mt-2 me-2 btn btn-success">Save</button>
-        <button id="btn-remove" type="button" class="mt-2 btn btn-danger">Remove</button>
-    </form>
-    <div class="col-xl-8">
-        <table class="table table-hover">
-            <colgroup>
-                <col class="col-Id">
-                <col class="col-Name">
-                <col class="col-Address">
-                <col class="col-Remove">
-            </colgroup>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>NAME</th>
-                    <th>CONTACT</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>S001</td>
-                    <td>Tharindu</td>
-                    <td>077-1234567</td>
-                    <td><i class="bi bi-trash"></i></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
    </div>
 </body>
 </html>
